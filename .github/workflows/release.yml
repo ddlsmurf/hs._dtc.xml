@@ -47,7 +47,7 @@ jobs:
           mkdir -p release/hs/_dtc/xml
           cp internal.so release/hs/_dtc/xml/
           cp init.lua release/hs/_dtc/xml/
-          cp docs.json markdown/hs.* release/hs/_dtc/xml/ || true
+          cp docs.json README.md markdown/hs.* release/hs/_dtc/xml/ || true
           cd release && tar -czf ../hs._dtc.xml.tar.gz *
 
       - name: Create Release
